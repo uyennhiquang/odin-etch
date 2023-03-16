@@ -5,12 +5,50 @@
 }
 
 .box {
-    margin: 10px;
-    padding: 10px;
-    /* border: 1px solid black; */
-    background: red;
+    margin: 0px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    /* background: red; */
 }
 
 .row {
     display: flex;
+}
+
+#section--canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#canvas {
+    width: 500px;
+    height: 500px;
+}
+
+.colored {
+    background: black;
+}
+
+.selector {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+header {
+    display: flex;
+    gap: 10rem;
+}
+
+button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
 }
